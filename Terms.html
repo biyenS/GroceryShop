@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Website | Home</title>
+    <!-- Frontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!-- header start -->
+    <header class="header">
+        <a href="home.html" class="logo"><i></i> grocery Shop</a>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="product.html">product</a>
+            <a href="about.html">about</a>
+            <a href="review.html">review</a>
+            <a href="gallery.html">gallery</a>
+            <a href="terms.html">Terms</a>
+            <a href="contact.html">contact</a>
+            
+           
+           
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+        <form action="#" class="search-form">
+            <input type="search" name="search-box" id="search-box" placeholder="Search..." autocomplete>
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="./image/cart-1.jpg" alt="">
+                <div class="content">
+                    <h3>Green Vegetables</h3>
+                    <div class="quantity-box">
+                        <span class="quantity-control" onclick="decreaseQuantity(this)">-</span>
+                        <input type="number" class="item-quantity" value="1">
+                        <span class="quantity-control" onclick="increaseQuantity(this)">+</span>
+                    </div>
+                    <span class="price">Rs 500</span>
+                </div>
+            </div>
+            <div class="box">
+                <!-- ... (content for first cart item) ... -->
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="./image/cart-2.jpg" alt="">
+                <div class="content">
+                    <h3>Milk</h3>
+                    <div class="quantity-box">
+                        <span class="quantity-control" onclick="decreaseQuantity(this)">-</span>
+                        <input type="number" class="item-quantity" value="1">
+                        <span class="quantity-control" onclick="increaseQuantity(this)">+</span>
+                    </div>
+                    <span class="price">Rs 225</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="./image/cart-3.jpg" alt="">
+                <div class="content">
+                    <h3>Grains</h3>
+                    <div class="quantity-box">
+                        <span class="quantity-control" onclick="decreaseQuantity(this)">-</span>
+                        <input type="number" class="item-quantity" value="1">
+                        <span class="quantity-control" onclick="increaseQuantity(this)">+</span>
+                    </div>
+                    <span class="price">Rs 1550</span>
+                </div>
+            </div>
+            <h3 class="total">Total: <span>Rs 5000</span></h3>
+            <a href="checkout.html" class="btn">Checkout Cart</a>
+        </div>
+        
+        <form action="#" class="login-form">
+            <h3>login form</h3>
+            <input type="email" name="email" id="email" placeholder="enter your email" class="box">
+            <input type="password" name="password" id="password" placeholder="enter your password" class="box">
+            <div class="remember">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">create one</a></p>
+        </form>
+        
+
+
+    </header>
+    <!-- header end -->
+    
+    <main>
+        <section id="terms_and_condition">
+            <h2></h2>
+            <p></p>
+            <h2></h2>
+            <p></p>
+            <h2></h2>
+            <p></p>
+            <h2></h2>
+            <p></p>
+            <h2 class="highlighted-heading">Terms of Service</h2>
+            <p>Welcome to Grocery Shop and Thank You for registering with us ! It is important that you review this agreement because this website, by planning and order with us by Telephone, Email, Fax, or through this website, You are agreeing to the term and conditions that govern the use of this site and terms upon which we agree to deliver to you.</p>
+            <h2 class="highlighted-heading">Our Delivary Services</h2>
+            <p>When you place an order, we use all reasonable efforts to deliver to you at the time of your choosing or by 5:00 pm on the day of your arrival. Once you place your order by telephone, fax, email, or online, we will act as bailee for the ordered products. You can modify an existing order at any time up until the order leaves the store by calling our customer service number at 435-655-5071 or 435-655-1914. Please note that we reserve the right to refuse service to anyone. We reserve the right to change the cost of deliveries and/or our delivery fees at any time.</p>
+            <h2 class="highlighted-heading">Price and Availability</h2>
+            <p>From time to time, products you order may be unavailable. If we are unable to fulfill your entire order, we will make every reasonable effort to substitute the closest product. We do not set the prices for the items you select on your grocery list. We pay the prices that each individual store has already set.</p>
+            <p>To receive delivery, you do not need to be present to receive your order from our driver. In the case of bad weather or unforeseen delivery complications, deliveries may be delayed. We will make every effort to get your groceries to you by 5:00 pm on the date of your arrival.</p>
+            <p>Your order will arrive with an invoice that will list all of the items you have received and were billed for. If something is missing from your order, please call us so that we can do everything reasonable in our power to ensure your satisfaction.
+                In the case where you fail to pay for the products ordered, you agree to forfeit to the Company any right, title, or interest you may have in the products.</p>
+            <h2 class="highlighted-heading">Payment</h2>
+            <p>We accept only credit/debit cards.  In the event your card is declined, we reserve the right to collect funds for any uncollected transactions owed us should a payment made via credit card be declined. If you fail to pay any fees or charges when due, we may charge such amount directly to the credit card identified in your Customer Account Information and we may suspend or terminate your access to our Service. You shall be responsible and liable for any fees, including but not limited to attorney’s fees and collection costs, that we may incur in our efforts to collect any unpaid balances from you.</p>
+            <h2 class="highlighted-heading">Copyright and Ownership</h2>
+            <p>All Site content, design, text, graphics, and interfaces; the collection, selection, and arrangement thereof; and all software are the property of, or duly licensed to, All Seasons Grocery, LLC. Consent is granted to view all of such things for the sole purpose of placing an order with us. You are not authorized to save or collect any such information. Any other use of materials on this Site, including modification, distribution, or reproduction is strictly prohibited. You acknowledge that All Seasons Grocery and/or third-party content providers remain the owners of such material and that you do not acquire any of those ownership rights by downloading copyrighted material. All Seasons Grocery reserves the right to revoke your use of the Site.</p>
+            <h2 class="highlighted-heading">Trademark</h2>
+            <p> All other trademarks, service marks, product names, and company names or logos appearing on the Site are the property of their respective owners and you do not acquire any ownership rights in such marks, logos, or names by using this Site or our service.</p>
+            <h2 class="highlighted-heading">Your Personal Information</h2>
+            <p>You are responsible for, and agree to pay promptly, all charges to your account, including applicable taxes and purchases by you or anyone you allow to use your credit card. You agree and accept responsibility for keeping all your account information current, including name, credit card information, telephone number, and e-mail address. You can update your information anytime that you place an order</p>
+        </section>
+        
+    </main>
+    <!-- footer start -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+                <a href="product.html"> <i class="fas fa-arrow-right"></i> Product</a>
+                <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+                <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
+                <a href="gallery.html"> <i class="fas fa-arrow-right"></i> Gallery</a>
+                <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my order</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my favorite</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my wish list</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my account</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> terms of use</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="enter your email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+                <img src="./image/payment.png" class="payment" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="credit">
+      
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

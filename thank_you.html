@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Grocery Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+       <!-- header start -->
+       <header class="header">
+        <a href="home.html" class="logo"><i></i> Grocery Shop</a>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="product.html">product</a>
+            <a href="about.html">about</a>
+            <a href="review.html">review</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="Terms.html">Terms</a>
+            <a href="contact.html">contact</a>
+            
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+        <form action="#" class="search-form">
+            <input type="search" name="search-box" id="search-box" placeholder="Search..." autocomplete>
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="./image/cart-1.jpg" alt="">
+                <div class="content">
+                    <h3>Green Vegetables</h3>
+                    <div class="quantity-box">
+                        <span class="quantity-control" onclick="decreaseQuantity(this)">-</span>
+                        <input type="number" class="item-quantity" value="1">
+                        <span class="quantity-control" onclick="increaseQuantity(this)">+</span>
+                    </div>
+                    <span class="price">Rs 500</span>
+                </div>
+            </div>
+            <div class="box">
+                <!-- ... (content for first cart item) ... -->
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="./image/cart-2.jpg" alt="">
+                <div class="content">
+                    <h3>Milk</h3>
+                    <div class="quantity-box">
+                        <span class="quantity-control" onclick="decreaseQuantity(this)">-</span>
+                        <input type="number" class="item-quantity" value="1">
+                        <span class="quantity-control" onclick="increaseQuantity(this)">+</span>
+                    </div>
+                    <span class="price">Rs 225</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="./image/cart-3.jpg" alt="">
+                <div class="content">
+                    <h3>Grains</h3>
+                    <div class="quantity-box">
+                        <span class="quantity-control" onclick="decreaseQuantity(this)">-</span>
+                        <input type="number" class="item-quantity" value="1">
+                        <span class="quantity-control" onclick="increaseQuantity(this)">+</span>
+                    </div>
+                    <span class="price">Rs 1550</span>
+                </div>
+            </div>
+            <h3 class="total">Total: <span>Rs 5000</span></h3>
+            <a href="checkout.html" class="btn">Checkout Cart</a>
+        </div>
+        
+        <form action="#" class="login-form">
+            <h3>login form</h3>
+            <input type="email" name="email" id="email" placeholder="enter your email" class="box">
+            <input type="password" name="password" id="password" placeholder="enter your password" class="box">
+            <div class="remember">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">create one</a></p>
+        </form>
+    </header>
+
+
+
+    <div class="thank-you-container">
+        <h1>Thank You for Your Order!</h1>
+        <p>Your order has been successfully placed.</p>
+        <p>We will process your order and deliver it to the provided address.</p>
+        <a href="home.html" class="btn">Back to Home</a>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
